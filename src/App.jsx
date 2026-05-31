@@ -9,7 +9,7 @@ import Favorites from './components/Favorites';
 import ThemeToggle from './components/ThemeToggle';
 import UnitToggle from './components/UnitToggle';
 import LanguageToggle from './components/LanguageToggle';
-
+import InstallPWA from './components/InstallPWA';
 import RecentSearches from './components/RecentSearches';
 import WeatherAlert from './components/WeatherAlert';
 import { CurrentWeatherSkeleton, WeatherDetailsSkeleton, HourlyChartSkeleton, WeeklyChartSkeleton, ForecastSkeleton } from './components/Skeletons';
@@ -116,7 +116,7 @@ function App() {
             </h1>
           </div>
           <div className="flex items-center gap-3">
-
+            <InstallPWA />
             <LanguageToggle />
             <UnitToggle />
             <ThemeToggle />
