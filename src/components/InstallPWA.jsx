@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Download } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 
 const InstallPWA = () => {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   const [isInstallable, setIsInstallable] = useState(false);
-  const { t } = useTranslation();
 
   useEffect(() => {
     const handleBeforeInstallPrompt = (e) => {
